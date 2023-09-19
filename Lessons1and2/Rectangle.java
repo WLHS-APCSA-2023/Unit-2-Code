@@ -1,24 +1,29 @@
-public class Rectangle{
-
+public class Rectangle {
     //properties of a rectangle
+    //instance variables - declared but not initialized
+    private int width;
+    private int height;
 
+    //to create rectangle, we need a constructor
+    public Rectangle(int rectWidth, int rectHeight){
+        width = rectWidth;
+        height = rectHeight;
+    }
 
-    //rectangle constructor - you specify length and width
+    public int getArea(){
+        return width * height;
+    }
 
-    //rectangle constructor - default
+    //write getPerimeter()
+    public int getPerimeter(){
+        return 2*(width + height);
+    }
 
-    //rectangle constructor - square
+    public int getWidth(){
+        return width;
+    }
 
-
-    //get length
-
-
-    //get width
-
-    //set length
-  
-    //set width
-
-    
-
+    public int getHeight(){
+        return height;
+    }
 }
